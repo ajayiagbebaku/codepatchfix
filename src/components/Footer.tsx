@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Github, Linkedin, Twitter } from 'lucide-react';
+import { Bug, Globe } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,46 +8,35 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1">
             <div className="flex items-center">
-              <Code2 className="h-8 w-8 text-blue-500" />
+              <Bug className="h-8 w-8 text-red-500" />
               <span className="ml-2 text-xl font-bold">CodePatchFix</span>
             </div>
             <p className="mt-4 text-gray-400">
-              Transforming ideas into exceptional digital experiences. Kansas City's trusted web development partner.
+              Global expert bug fixing service. We solve technical problems worldwide - from application crashes to database issues and AI builder support.
             </p>
-            <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Github className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-            </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">Services</h3>
+            <h3 className="text-lg font-semibold">Bug Fixing Services</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Custom Development
+                  Application Bug Fixes
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  UI/UX Design
+                  Database Troubleshooting
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Performance Optimization
+                  AI Builder Support
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Consultation
+                  Emergency Fixes
                 </a>
               </li>
             </ul>
@@ -63,12 +52,17 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
+                  Success Stories
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Careers
+                  Global Support
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -76,6 +70,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <div className="flex items-center justify-center mb-2">
+            <Globe className="h-4 w-4 mr-2" />
+            <span>Serving customers worldwide</span>
+          </div>
           <p>© {new Date().getFullYear()} CodePatchFix. All rights reserved.</p>
         </div>
       </div>

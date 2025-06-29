@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { MessageSquare, Mail, MapPin, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 const services = [
-  'Custom Development',
-  'Performance Optimization',
-  'UI/UX Design',
-  'Consultation'
+  'Application Bug Fixes',
+  'Database Troubleshooting',
+  'AI Builder Support',
+  'Emergency Fixes',
+  'Code Review & Security',
+  'Legacy System Support'
 ];
 
 const Contact = () => {
@@ -66,41 +68,17 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white">
       <Toaster position="top-right" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Start Your Project
+            Get Your Bug Fixed
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Tell us about your project needs
+            Tell us about your technical problem and we'll fix it fast
           </p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-gray-900">Contact Information</h3>
-            <div className="mt-6 space-y-4">
-              <div className="flex items-center">
-                <MapPin className="h-6 w-6 text-blue-600" />
-                <span className="ml-3 text-gray-600">
-                  Shawnee, KS
-                </span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="h-6 w-6 text-blue-600" />
-                <span className="ml-3 text-gray-600">
-                  ajayi@codepatchfix.com
-                </span>
-              </div>
-              <div className="flex items-center">
-                <MessageSquare className="h-6 w-6 text-blue-600" />
-                <span className="ml-3 text-gray-600">
-                  (469) 980-9950
-                </span>
-              </div>
-            </div>
-          </div>
-
+        <div className="mt-20">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -132,7 +110,7 @@ const Contact = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Services Needed
+                Type of Problem
               </label>
               <div className="grid grid-cols-2 gap-2">
                 {services.map((service) => (
@@ -154,7 +132,7 @@ const Contact = () => {
 
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Project Details
+                Problem Description
               </label>
               <textarea
                 id="message"
@@ -162,7 +140,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                placeholder="Please describe your project needs and any specific requirements..."
+                placeholder="Please describe your technical problem, error messages, and what you've already tried..."
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               ></textarea>
             </div>
@@ -178,7 +156,7 @@ const Contact = () => {
                   Sending...
                 </>
               ) : (
-                'Send Message'
+                'Send Bug Report'
               )}
             </button>
           </form>

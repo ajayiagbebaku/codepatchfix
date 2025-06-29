@@ -1,26 +1,36 @@
 import React from 'react';
-import { Code2, Rocket, Users, MessageSquare } from 'lucide-react';
+import { Bug, Database, Zap, Clock, Shield, Code2 } from 'lucide-react';
 
 const services = [
   {
-    icon: <Code2 className="h-8 w-8 text-blue-600" />,
-    title: 'Custom Development',
-    description: 'Tailored web solutions built with cutting-edge technologies to meet your specific business needs.'
+    icon: <Bug className="h-8 w-8 text-red-500" />,
+    title: 'Application Bug Fixes',
+    description: 'Our experts fix crashes, errors, and functionality issues in your applications.'
   },
   {
-    icon: <Rocket className="h-8 w-8 text-blue-600" />,
-    title: 'Performance Optimization',
-    description: 'Speed up your digital presence with our expert optimization techniques.'
+    icon: <Database className="h-8 w-8 text-green-500" />,
+    title: 'Database Troubleshooting',
+    description: 'Resolve data corruption, performance bottlenecks, and connection issues.'
   },
   {
-    icon: <Users className="h-8 w-8 text-blue-600" />,
-    title: 'UI/UX Design',
-    description: 'Create engaging user experiences that convert visitors into customers.'
+    icon: <Zap className="h-8 w-8 text-yellow-500" />,
+    title: 'AI Builder Support',
+    description: 'Get unstuck with AI-powered development tools and resolve integration issues.'
   },
   {
-    icon: <MessageSquare className="h-8 w-8 text-blue-600" />,
-    title: 'Consultation',
-    description: 'Strategic guidance to help you make informed decisions about your digital presence.'
+    icon: <Clock className="h-8 w-8 text-blue-500" />,
+    title: 'Emergency Fixes',
+    description: 'Urgent problem resolution with rapid response times for critical issues.'
+  },
+  {
+    icon: <Shield className="h-8 w-8 text-purple-500" />,
+    title: 'Code Review & Security',
+    description: 'Identify and fix security vulnerabilities and code quality issues.'
+  },
+  {
+    icon: <Code2 className="h-8 w-8 text-indigo-500" />,
+    title: 'Legacy System Support',
+    description: 'Maintain and fix older systems that need specialized attention.'
   }
 ];
 
@@ -33,11 +43,11 @@ const Services = () => {
             Our Services
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Comprehensive web solutions tailored to your needs
+            Expert solutions for all your technical problems
           </p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
