@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bug, Database, Zap, Clock, Shield, Code2 } from 'lucide-react';
+import { Bug, Database, Zap, Clock, Shield, Code2, Bot, ShoppingCart, Globe } from 'lucide-react';
 
 const services = [
   {
@@ -18,17 +18,32 @@ const services = [
     description: 'Get unstuck with AI-powered development tools and resolve integration issues.'
   },
   {
-    icon: <Clock className="h-8 w-8 text-blue-500" />,
+    icon: <Bot className="h-8 w-8 text-purple-500" />,
+    title: 'Python Automation',
+    description: 'Fix automation scripts, data processing pipelines, and workflow automation issues.'
+  },
+  {
+    icon: <ShoppingCart className="h-8 w-8 text-blue-500" />,
+    title: 'Shopify Issues',
+    description: 'Resolve checkout problems, theme issues, app conflicts, and store performance.'
+  },
+  {
+    icon: <Globe className="h-8 w-8 text-indigo-500" />,
+    title: 'WordPress Issues',
+    description: 'Fix plugin conflicts, theme problems, security vulnerabilities, and site performance.'
+  },
+  {
+    icon: <Clock className="h-8 w-8 text-orange-500" />,
     title: 'Emergency Fixes',
     description: 'Urgent problem resolution with rapid response times for critical issues.'
   },
   {
-    icon: <Shield className="h-8 w-8 text-purple-500" />,
+    icon: <Shield className="h-8 w-8 text-teal-500" />,
     title: 'Code Review & Security',
     description: 'Identify and fix security vulnerabilities and code quality issues.'
   },
   {
-    icon: <Code2 className="h-8 w-8 text-indigo-500" />,
+    icon: <Code2 className="h-8 w-8 text-gray-500" />,
     title: 'Legacy System Support',
     description: 'Maintain and fix older systems that need specialized attention.'
   }

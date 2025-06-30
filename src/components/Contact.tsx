@@ -7,9 +7,22 @@ const services = [
   'Application Bug Fixes',
   'Database Troubleshooting',
   'AI Builder Support',
+  'Python Automation',
+  'Shopify Issues',
+  'WordPress Issues',
   'Emergency Fixes',
   'Code Review & Security',
   'Legacy System Support'
+];
+
+const budgetRanges = [
+  'Under $100',
+  '$100 - $500',
+  '$500 - $1,000',
+  '$1,000 - $2,500',
+  '$2,500 - $5,000',
+  '$5,000+',
+  'Not sure / Need quote'
 ];
 
 const Contact = () => {
@@ -18,6 +31,7 @@ const Contact = () => {
     name: '',
     email: '',
     services: [] as string[],
+    budget: '',
     message: ''
   });
 
@@ -33,6 +47,7 @@ const Contact = () => {
           from_name: formData.name,
           from_email: formData.email,
           selected_services: formData.services.join(', '),
+          budget_range: formData.budget,
           message: formData.message,
           to_name: 'CodePatchFix Team',
         },
@@ -40,7 +55,7 @@ const Contact = () => {
       );
 
       toast.success('Message sent successfully!');
-      setFormData({ name: '', email: '', services: [], message: '' });
+      setFormData({ name: '', email: '', services: [], budget: '', message: '' });
     } catch (error) {
       toast.error('Failed to send message. Please try again.');
       console.error('EmailJS error:', error);
@@ -49,7 +64,7 @@ const Contact = () => {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.id]: e.target.value
@@ -128,6 +143,29 @@ const Contact = () => {
                   </label>
                 ))}
               </div>
+            </div>
+
+            <div>
+              <label htmlFor="budget" className="block text-sm font-medium text-gray-700">
+                Budget Range
+              </label>
+              <select
+                id="budget"
+                value={formData.budget}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              >
+                <option value="">Select your budget range</option>
+                {budgetRanges.map((range) => (
+                  <option key={range} value={range}>
+                    {range}
+                  </option>
+                ))}
+              </select>
+              <p className="mt-1 text-sm text-gray-500">
+                This helps us provide the most appropriate solution for your needs
+              </p>
             </div>
 
             <div>
