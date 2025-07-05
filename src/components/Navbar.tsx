@@ -20,6 +20,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Code2 className="h-8 w-8 text-blue-600" />
             <span className="ml-2 text-xl font-bold text-gray-900">CodePatchFix</span>
+            <span className="ml-2 text-sm text-gray-600 hidden sm:block">| Kansas City Web Development</span>
           </div>
           
           <div className="hidden md:block">

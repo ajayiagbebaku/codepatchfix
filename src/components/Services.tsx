@@ -1,7 +1,27 @@
 import React from 'react';
-import { Bug, Database, Zap, Clock, Shield, Code2, Bot, ShoppingCart, Globe } from 'lucide-react';
+import { Bug, Database, Zap, Clock, Shield, Code2, Bot, ShoppingCart, Globe, Monitor, Smartphone, Palette, Search } from 'lucide-react';
 
 const services = [
+  {
+    icon: <Monitor className="h-8 w-8 text-blue-600" />,
+    title: 'Website Development',
+    description: 'Custom websites built for Kansas City businesses to establish a strong online presence and attract local customers.'
+  },
+  {
+    icon: <Smartphone className="h-8 w-8 text-green-600" />,
+    title: 'Mobile-First Design',
+    description: 'Responsive websites that work perfectly on all devices, ensuring your KC customers can find you anywhere.'
+  },
+  {
+    icon: <Search className="h-8 w-8 text-yellow-600" />,
+    title: 'Local SEO Optimization',
+    description: 'Get your Kansas City business found by local customers searching for your services online.'
+  },
+  {
+    icon: <Palette className="h-8 w-8 text-purple-600" />,
+    title: 'Brand & Design',
+    description: 'Professional branding and design that reflects your KC business values and appeals to local customers.'
+  },
   {
     icon: <Bug className="h-8 w-8 text-red-500" />,
     title: 'Application Bug Fixes',
@@ -41,11 +61,6 @@ const services = [
     icon: <Shield className="h-8 w-8 text-teal-500" />,
     title: 'Code Review & Security',
     description: 'Identify and fix security vulnerabilities and code quality issues.'
-  },
-  {
-    icon: <Code2 className="h-8 w-8 text-gray-500" />,
-    title: 'Legacy System Support',
-    description: 'Maintain and fix older systems that need specialized attention.'
   }
 ];
 
@@ -55,10 +70,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Our Services
+            Services for Kansas City Businesses
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Expert solutions for all your technical problems
+            From website development to technical support - helping KC businesses grow online
           </p>
         </div>
 

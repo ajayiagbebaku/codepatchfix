@@ -4,6 +4,10 @@ import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 const services = [
+  'Website Development',
+  'Mobile-First Design',
+  'Local SEO Optimization',
+  'Brand & Design',
   'Application Bug Fixes',
   'Database Troubleshooting',
   'AI Builder Support',
@@ -11,17 +15,16 @@ const services = [
   'Shopify Issues',
   'WordPress Issues',
   'Emergency Fixes',
-  'Code Review & Security',
-  'Legacy System Support'
+  'Code Review & Security'
 ];
 
 const budgetRanges = [
-  'Under $100',
-  '$100 - $500',
+  'Under $500',
   '$500 - $1,000',
   '$1,000 - $2,500',
   '$2,500 - $5,000',
-  '$5,000+',
+  '$5,000 - $10,000',
+  '$10,000+',
   'Not sure / Need quote'
 ];
 
@@ -86,10 +89,10 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Get Your Bug Fixed
+            Get Your Free Consultation
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Tell us about your technical problem and we'll fix it fast
+            Ready to grow your Kansas City business online? Let's discuss your project
           </p>
         </div>
 
@@ -97,7 +100,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
+                Business Name
               </label>
               <input
                 type="text"
@@ -105,6 +108,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
+                placeholder="Your Kansas City business name"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
@@ -119,13 +123,14 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                placeholder="your-email@yourbusiness.com"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Type of Problem
+                Services You're Interested In
               </label>
               <div className="grid grid-cols-2 gap-2">
                 {services.map((service) => (
@@ -147,7 +152,7 @@ const Contact = () => {
 
             <div>
               <label htmlFor="budget" className="block text-sm font-medium text-gray-700">
-                Budget Range
+                Project Budget Range
               </label>
               <select
                 id="budget"
@@ -164,13 +169,13 @@ const Contact = () => {
                 ))}
               </select>
               <p className="mt-1 text-sm text-gray-500">
-                This helps us provide the most appropriate solution for your needs
+                This helps us provide the most appropriate solution for your Kansas City business
               </p>
             </div>
 
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Problem Description
+                Project Details
               </label>
               <textarea
                 id="message"
@@ -178,7 +183,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                placeholder="Please describe your technical problem, error messages, and what you've already tried..."
+                placeholder="Tell us about your project goals, target audience, timeline, and any specific requirements for your Kansas City business..."
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               ></textarea>
             </div>
@@ -194,7 +199,7 @@ const Contact = () => {
                   Sending...
                 </>
               ) : (
-                'Send Bug Report'
+                'Get Free Consultation'
               )}
             </button>
           </form>

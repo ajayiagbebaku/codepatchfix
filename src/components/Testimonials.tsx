@@ -4,57 +4,57 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Sarah Chen',
-    role: 'CTO',
-    company: 'SaaS Company',
-    content: 'Our application was crashing every 30 minutes. CodePatchFix experts fixed the memory leak in under 4 hours. We\'ve had zero crashes since then.',
+    role: 'Owner',
+    company: 'KC Coffee Roasters',
+    content: 'Our new website has increased online orders by 200%! The local SEO optimization has brought in so many Kansas City customers we never had before.',
     rating: 5,
-    problem: 'Application Crashes',
-    timeframe: 'Fixed in 4 hours'
+    problem: 'Website Development',
+    timeframe: 'Completed in 3 weeks'
   },
   {
     name: 'Marcus Rodriguez',
-    role: 'Lead Developer',
-    company: 'E-commerce Startup',
-    content: 'Database corruption after a failed migration. CodePatchFix experts recovered all our data and optimized performance by 300%.',
+    role: 'Manager',
+    company: 'Downtown Auto Repair',
+    content: 'The mobile-first design is perfect. Our customers can easily book appointments from their phones, and we\'ve seen a 150% increase in online bookings.',
     rating: 5,
-    problem: 'Database Corruption',
-    timeframe: 'Fixed in 6 hours'
+    problem: 'Mobile-First Design',
+    timeframe: 'Completed in 2 weeks'
   },
   {
     name: 'Jennifer Park',
-    role: 'Product Manager',
-    company: 'AI-Powered App',
-    content: 'Stuck for weeks with AI builder integration. CodePatchFix experts solved everything in just 2 days. Excellent service!',
+    role: 'Owner',
+    company: 'KC Pet Grooming',
+    content: 'Our new website with local SEO has us ranking #1 for "pet grooming Kansas City". Business has never been better!',
     rating: 5,
-    problem: 'AI Builder Integration',
-    timeframe: 'Fixed in 2 days'
+    problem: 'Local SEO Optimization',
+    timeframe: 'Results in 1 month'
   },
   {
     name: 'David Thompson',
     role: 'Founder',
-    company: 'FinTech Startup',
-    content: 'Critical security vulnerability discovered. CodePatchFix experts implemented a secure fix overnight, preventing a potential data breach.',
+    company: 'KC Legal Services',
+    content: 'Professional branding and website design that perfectly represents our firm. We\'ve gained 5 new clients in the first month.',
     rating: 5,
-    problem: 'Security Vulnerability',
-    timeframe: 'Fixed overnight'
+    problem: 'Brand & Design',
+    timeframe: 'Completed in 4 weeks'
   },
   {
     name: 'Lisa Wang',
-    role: 'DevOps Engineer',
-    company: 'Healthcare Platform',
-    content: 'Legacy system failing to process patient data. CodePatchFix experts modernized the critical components while maintaining full backward compatibility.',
+    role: 'Owner',
+    company: 'KC Dental Practice',
+    content: 'The website is beautiful and functional. Patients can easily find us, book appointments, and learn about our services. Highly recommend!',
     rating: 5,
-    problem: 'Legacy System Issues',
-    timeframe: 'Fixed in 1 week'
+    problem: 'Healthcare Website',
+    timeframe: 'Completed in 3 weeks'
   },
   {
     name: 'Alex Johnson',
-    role: 'Technical Lead',
-    company: 'Gaming Company',
-    content: 'Performance issues causing game lag. CodePatchFix experts optimized the code and improved frame rates by 60%. Our users are thrilled!',
+    role: 'Manager',
+    company: 'KC Fitness Center',
+    content: 'Our new website with online class booking has increased membership signups by 300%. The local SEO is bringing in Kansas City customers daily.',
     rating: 5,
-    problem: 'Performance Issues',
-    timeframe: 'Fixed in 3 days'
+    problem: 'E-commerce Integration',
+    timeframe: 'Completed in 4 weeks'
   }
 ];
 
@@ -64,10 +64,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Success Stories
+            Kansas City Success Stories
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Real problems, real solutions, real results
+            Real Kansas City businesses, real growth, real results
           </p>
         </div>
 
@@ -123,16 +123,16 @@ const Testimonials = () => {
         <div className="mt-16 text-center">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to get your problem solved?
+              Ready to grow your Kansas City business online?
             </h3>
             <p className="text-gray-600 mb-6">
-              Submit your bug report and our experts will fix it fast.
+              Get your free consultation and join the successful KC businesses we've helped.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
             >
-              Submit Your Bug Report
+              Get Your Free Consultation
             </a>
           </div>
         </div>
