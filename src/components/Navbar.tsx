@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Code2, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
@@ -20,15 +20,15 @@ const Navbar = () => {
           <div className="flex items-center">
             <Code2 className="h-8 w-8 text-blue-600" />
             <span className="ml-2 text-xl font-bold text-gray-900">CodePatchFix</span>
-            <span className="ml-2 text-sm text-gray-600 hidden sm:block">| Kansas City Web Development</span>
+            <span className="ml-2 text-sm text-gray-600 hidden sm:block">| On-Call Web & Tech Support</span>
           </div>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <a href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                Get Started
+              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">What We Fix</a>
+              <a href="#plans" className="text-gray-700 hover:text-blue-600 transition-colors">Plans</a>
+              <a href="#support-request" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                Submit a Bug / Request Support
               </a>
             </div>
           </div>
@@ -45,9 +45,9 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
-            <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
-            <a href="#contact" className="block px-3 py-2 bg-blue-600 text-white rounded-md">Get Started</a>
+            <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">What We Fix</a>
+            <a href="#plans" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Plans</a>
+            <a href="#support-request" className="block px-3 py-2 bg-blue-600 text-white rounded-md">Submit a Bug / Request Support</a>
           </div>
         </div>
       )}

@@ -5,56 +5,56 @@ const testimonials = [
   {
     name: 'Sarah Chen',
     role: 'Owner',
-    company: 'KC Coffee Roasters',
-    content: 'Our new website has increased online orders by 200%! The local SEO optimization has brought in so many Kansas City customers we never had before.',
+    company: 'Regional Coffee Roasters',
+    content: 'We submitted a broken form and had it fixed with clear pricing the same day. Support felt like an extension of our team.',
     rating: 5,
-    problem: 'Website Development',
-    timeframe: 'Completed in 3 weeks'
+    problem: 'Form & UX Fix',
+    timeframe: 'Resolved in 1 day'
   },
   {
     name: 'Marcus Rodriguez',
-    role: 'Manager',
-    company: 'Downtown Auto Repair',
-    content: 'The mobile-first design is perfect. Our customers can easily book appointments from their phones, and we\'ve seen a 150% increase in online bookings.',
+    role: 'Ops Manager',
+    company: 'Auto Repair Group',
+    content: 'Priority plan is worth it. Checkout errors were triaged, fixed, and verified without a single meeting. Customers stopped calling about failures.',
     rating: 5,
-    problem: 'Mobile-First Design',
-    timeframe: 'Completed in 2 weeks'
+    problem: 'Checkout Bug',
+    timeframe: 'Completed in 48 hours'
   },
   {
     name: 'Jennifer Park',
-    role: 'Owner',
-    company: 'KC Pet Grooming',
-    content: 'Our new website with local SEO has us ranking #1 for "pet grooming Kansas City". Business has never been better!',
+    role: 'Founder',
+    company: 'DTC Pet Care',
+    content: 'They handled theme conflicts and performance issues on Shopify with minimal direction. Clear communication, no surprises.',
     rating: 5,
-    problem: 'Local SEO Optimization',
-    timeframe: 'Results in 1 month'
+    problem: 'Shopify Performance',
+    timeframe: 'Results in 3 days'
   },
   {
     name: 'David Thompson',
-    role: 'Founder',
-    company: 'KC Legal Services',
-    content: 'Professional branding and website design that perfectly represents our firm. We\'ve gained 5 new clients in the first month.',
+    role: 'Managing Partner',
+    company: 'Legal Services Firm',
+    content: 'Our site went down on a Friday. Emergency support got us back up, hardened the stack, and documented the fix.',
     rating: 5,
-    problem: 'Brand & Design',
-    timeframe: 'Completed in 4 weeks'
+    problem: 'Emergency Recovery',
+    timeframe: 'Same-day recovery'
   },
   {
     name: 'Lisa Wang',
-    role: 'Owner',
-    company: 'KC Dental Practice',
-    content: 'The website is beautiful and functional. Patients can easily find us, book appointments, and learn about our services. Highly recommend!',
+    role: 'Practice Owner',
+    company: 'Dental Group',
+    content: 'Accessibility fixes and online scheduling updates improved conversions without rebuilding the site.',
     rating: 5,
-    problem: 'Healthcare Website',
-    timeframe: 'Completed in 3 weeks'
+    problem: 'Accessibility & Forms',
+    timeframe: 'Completed in 1 week'
   },
   {
     name: 'Alex Johnson',
-    role: 'Manager',
-    company: 'KC Fitness Center',
-    content: 'Our new website with online class booking has increased membership signups by 300%. The local SEO is bringing in Kansas City customers daily.',
+    role: 'Marketing Lead',
+    company: 'National Fitness Brand',
+    content: 'Monthly plan keeps us covered. Landing page edits and tracking fixes ship fast and stay on budget.',
     rating: 5,
-    problem: 'E-commerce Integration',
-    timeframe: 'Completed in 4 weeks'
+    problem: 'Ongoing Support',
+    timeframe: 'Ongoing'
   }
 ];
 
@@ -64,10 +64,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Kansas City Success Stories
+            Verified client results
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Real Kansas City businesses, real growth, real results
+            Fast fixes and ongoing support for teams across industries.
           </p>
         </div>
 
@@ -123,16 +123,16 @@ const Testimonials = () => {
         <div className="mt-16 text-center">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to grow your Kansas City business online?
+              Need a fix? Submit your request now.
             </h3>
             <p className="text-gray-600 mb-6">
-              Get your free consultation and join the successful KC businesses we've helped.
+              Quick triage, clear pricing, and remote support — no consultation calls required.
             </p>
             <a
-              href="#contact"
+              href="#support-request"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
             >
-              Get Your Free Consultation
+              Submit a Support Request
             </a>
           </div>
         </div>

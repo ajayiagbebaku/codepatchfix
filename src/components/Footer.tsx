@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
           <div className="flex items-center justify-center mb-2">
             <Globe className="h-4 w-4 mr-2" />
-            <span>Serving customers worldwide</span>
+            <span>Based in Kansas City, serving customers nationwide</span>
           </div>
           <p>© {new Date().getFullYear()} CodePatchFix. All rights reserved.</p>
         </div>

@@ -8,20 +8,39 @@ const Hero = () => {
         <div className="text-center lg:text-left lg:flex lg:items-center lg:justify-between">
           <div className="lg:w-1/2">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block">Website Development</span>
-              <span className="block text-blue-600">for Kansas City</span>
+              <span className="block">On-Call Web & Tech Support for Small Businesses — Nationwide</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto lg:mx-0">
-              We help Kansas City businesses establish a strong online presence with custom websites, local SEO, and technical support. From design to development, we're your local tech partner.
+              Bug fixes, website issues, edits, and emergency support — without hiring a developer.
             </p>
             <div className="mt-8 sm:mt-10">
               <a
-                href="#contact"
+                href="#support-request"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
               >
-                Get Your Free Consultation
+                Submit a Support Request
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
+              <a
+                href="#plans"
+                className="inline-flex items-center px-6 py-3 border border-blue-200 text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 transition-colors ml-4"
+              >
+                View Monthly Plans
+              </a>
+            </div>
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-gray-700">
+              <div className="flex items-center justify-center sm:justify-start">
+                <span className="h-2 w-2 bg-green-500 rounded-full mr-2" />
+                Fast response
+              </div>
+              <div className="flex items-center justify-center sm:justify-start">
+                <span className="h-2 w-2 bg-green-500 rounded-full mr-2" />
+                Clear pricing
+              </div>
+              <div className="flex items-center justify-center sm:justify-start">
+                <span className="h-2 w-2 bg-green-500 rounded-full mr-2" />
+                No long calls required
+              </div>
             </div>
           </div>
           <div className="mt-10 lg:mt-0 lg:w-1/2">
@@ -29,36 +48,36 @@ const Hero = () => {
               <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
                 <Monitor className="h-8 w-8 text-blue-600 mr-4" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Custom Websites</h3>
-                  <p className="text-sm text-gray-600">Professional websites built for KC businesses</p>
+                  <h3 className="font-semibold text-gray-900">Rapid Website Fixes</h3>
+                  <p className="text-sm text-gray-600">Squash bugs, broken forms, styling issues, and outages.</p>
                 </div>
               </div>
               <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
                 <Smartphone className="h-8 w-8 text-green-600 mr-4" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Mobile-First Design</h3>
-                  <p className="text-sm text-gray-600">Responsive sites that work on all devices</p>
+                  <h3 className="font-semibold text-gray-900">Edits & Enhancements</h3>
+                  <p className="text-sm text-gray-600">Make quick content updates and UX tweaks without a dev hire.</p>
                 </div>
               </div>
               <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
                 <Search className="h-8 w-8 text-yellow-600 mr-4" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Local SEO</h3>
-                  <p className="text-sm text-gray-600">Get found by Kansas City customers</p>
+                  <h3 className="font-semibold text-gray-900">Performance & SEO</h3>
+                  <p className="text-sm text-gray-600">Speed, SEO fixes, and technical clean-up for better rankings.</p>
                 </div>
               </div>
               <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
                 <Palette className="h-8 w-8 text-purple-600 mr-4" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Brand & Design</h3>
-                  <p className="text-sm text-gray-600">Professional branding for local appeal</p>
+                  <h3 className="font-semibold text-gray-900">Design Adjustments</h3>
+                  <p className="text-sm text-gray-600">Pixel-perfect fixes for layouts, spacing, and brand consistency.</p>
                 </div>
               </div>
               <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
                 <Bug className="h-8 w-8 text-red-500 mr-4" />
                 <div>
                   <h3 className="font-semibold text-gray-900">Technical Support</h3>
-                  <p className="text-sm text-gray-600">Fix bugs and maintain your website</p>
+                  <p className="text-sm text-gray-600">Emergency help and ongoing fixes handled remotely, nationwide.</p>
                 </div>
               </div>
             </div>
